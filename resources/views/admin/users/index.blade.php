@@ -6,16 +6,16 @@
             @include('admin.sidebar')
 
             <div class="col-md-9">
-                <div class="card">
-                    <div class="card-header">Users</div>
-                    <div class="card-body">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Users</div>
+                    <div class="panel-body">
+                        {!! Form::open(['method' => 'GET', 'url' => '/admin/users', 'class' => 'form-inline my-2 my-lg-0 float-right', 'role' => 'search'])  !!}
                         <a href="{{ url('/admin/users/create') }}" class="btn btn-success btn-sm" title="Add New User">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 
-                        {!! Form::open(['method' => 'GET', 'url' => '/admin/users', 'class' => 'form-inline my-2 my-lg-0 float-right', 'role' => 'search'])  !!}
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="search" placeholder="Search...">
+                        <div class="navbar-right">
+                          <input type="text" class="form-control" name="search" placeholder="Search...">
                             <span class="input-group-append">
                                 <button class="btn btn-secondary" type="submit">
                                     <i class="fa fa-search"></i>
@@ -23,10 +23,10 @@
                             </span>
                         </div>
                         {!! Form::close() !!}
-
+                      </dev>
                         <br/>
                         <br/>
-                        <div class="table-responsive">
+                        <div class="panel panel-default">
                             <table class="table">
                                 <thead>
                                     <tr>

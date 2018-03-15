@@ -1,12 +1,12 @@
 <div class="col-md-3">
     @foreach($laravelAdminMenus->menus as $section)
         @if($section->items)
-            <div class="card">
-                <div class="card-header">
+            <div class="panel panel-default">
+                <div class="panel-heading">
                     {{ $section->section }}
                 </div>
 
-                <div class="card-body">
+                <div class="panel-body">
                     <ul class="nav flex-column" role="tablist">
                         @foreach($section->items as $menu)
                             <li class="nav-item" role="presentation">

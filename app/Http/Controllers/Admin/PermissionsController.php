@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\AuthController;
 use App\Permission;
 use Illuminate\Http\Request;
 
-class PermissionsController extends Controller
+class PermissionsController extends AuthController
 {
+  /**
+   * Create a new controller instance.
+   *
+   * @return void
+   */
+  public function __construct()
+  {
+    parent::__construct(); //継承元のコンストラクタ呼出
+  }
     /**
      * Display a listing of the resource.
      *

@@ -6,9 +6,9 @@
             @include('admin.sidebar')
 
             <div class="col-md-9">
-                <div class="card">
-                    <div class="card-header">User</div>
-                    <div class="card-body">
+                <div class="panel panel-default">
+                    <div class="panel-heading">User</div>
+                    <div class="panel-body">
 
                         <a href="{{ url('/admin/users') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <a href="{{ url('/admin/users/' . $user->id . '/edit') }}" title="Edit User"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
@@ -27,7 +27,7 @@
                         <br/>
                         <br/>
 
-                        <div class="table-responsive">
+                        <div class="panel panel-default">
                             <table class="table">
                                 <thead>
                                     <tr>

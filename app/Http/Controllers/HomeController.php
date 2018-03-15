@@ -13,6 +13,7 @@ class HomeController extends AuthController
      */
     public function __construct()
     {
+      parent::__construct(); //継承元のコンストラクタ呼出
     }
 
     /**

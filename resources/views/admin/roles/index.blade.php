@@ -6,9 +6,9 @@
             @include('admin.sidebar')
 
             <div class="col-md-9">
-                <div class="card">
-                    <div class="card-header">Roles</div>
-                    <div class="card-body">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Roles</div>
+                    <div class="panel-body">
                         <a href="{{ url('/admin/roles/create') }}" class="btn btn-success btn-sm" title="Add New Role">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
@@ -27,7 +27,7 @@
                         <br/>
                         <br/>
 
-                        <div class="table-responsive">
+                        <div class="panel panel-default">
                             <table class="table">
                                 <thead>
                                     <tr>
